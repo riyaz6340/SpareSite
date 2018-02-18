@@ -7,23 +7,80 @@
         <link href="webstudiocss/webstudio_page.css" type="text/css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="webstudiojquery/webstudiojquery.js"></script>
+        <script>
+
+        </script>
+        <style>
+            .tutorial-list{
+                margin: 1rem 2rem;
+                font-size: 30px;
+                cursor: pointer;
+                color: white;
+                text-decoration: none;
+                opacity: 0.7;
+                display: inline-block;
+                /*width: 12rem;*/
+            }
+            
+            .tutorial-list:hover{
+                opacity: 1;
+            }
+            .header-block{
+                padding: 1rem;
+            }
+            .abc{
+                width: 20rem;
+            }
+        </style>
     </head>
     <body class="webstudio">
         <header class="header">
             <span class="webstudio-logo"></span>
             <span class="center-menu">
-                <span class="menu">Projects</span>
-                <span class="menu">Html</span>
-                <span class="menu">CSS</span>
-                <span class="menu">JavaScript</span>
-                <span class="menu">Jquery</span>
+                <span class="menu" id="project">Projects</span>
+                <span class="menu" id="html">Html</span>
+                <span class="menu" id="css">CSS</span>
+                <span class="menu" id="javascript">JavaScript</span>
+                <span class="menu" id="jquery">Jquery</span>
             </span>
         </header>
-        <div class="header-block">
-            
-        </div>
+
         <div class="background-image background-image-top" style="position: relative">
-            
+            <div class="header-block" id="projectblock">
+                
+            </div>
+            <div class="header-block" id="htmlblock">
+                <div>
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                    <a href="#" class="tutorial-list"><span class="abc">Html w</span></a>
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+<!--                </div>
+                <div>-->
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                    <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+<!--                </div>
+                <div>-->
+                <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                <a href="#" class="tutorial-list"><span>Html OverView</span></a>
+                </div>
+            </div>
+            <div class="header-block" id="cssblock">
+                CSS
+            </div>
+            <div class="header-block" id="javascriptblock">
+                Javascript
+            </div>
+            <div class="header-block" id="jqueryblock">
+                JQuery
+            </div>
             <div class="getstarted-container">
                 <label class="label">Welcome To Web Studio</label>
                 <input class="getstarted-input" type="text" placeholder="Enter Email Address">
@@ -58,8 +115,8 @@
             </span>
         </div>
         <div class="background-image background-image-middle">
-<!--            <div class="getstarted-container">
-            </div>-->
+            <!--            <div class="getstarted-container">
+                        </div>-->
             <div class="right-align-text">
                 <h1>Tutorial:</h1>
                 <p>Web development is a broad term for the work involved in developing 
@@ -71,16 +128,7 @@
                     of tasks to which web development commonly refers, may include web 
                     engineering, web design, web content development, client liaison, 
                     client-side/server-side scripting, web server and network security 
-                    configuration, and e-commerce development. Among web professionals, 
-                    "web development" usually refers to the main non-design aspects of 
-                    building web sites: writing markup and coding. Most recently Web 
-                    development has come to mean the creation of content management 
-                    systems or CMS. These CMS can be made from scratch, proprietary or
-                    open source. In broad terms the CMS acts as middleware between the 
-                    database and the user through the browser. A principle benefit of a 
-                    CMS is that it allows non-technical people to make changes to their 
-                    web site
-                    without having technical knowledge.</p>
+                    configuration, and e-commerce development.</p>
             </div>
         </div>
         <div class="Tutorial">
